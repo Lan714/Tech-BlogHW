@@ -8,4 +8,4 @@ Post.belongsTo(User, { as: 'u', foreignKey: 'uid' })
 User.Many(Comment, {foreignKey: 'uid' })
 Comment.belongsTo(User, { as: 'u', foreignKey: 'uid'})
 
-module.exports = { User, Post }
+module.exports = { User, Post, Comment }
